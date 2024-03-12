@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Mulish:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Bokor&family=Mulish:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Big+Shoulders+Stencil+Display:wght@100..900&family=Bokor&family=Mulish:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#0D0D0D];
+}
+
+.glass-effect-box-header {
+  background: linear-gradient(
+    91deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.41) 100%
+  );
+  backdrop-filter: blur(11.949999809265137px);
+}
+
+.baskervville {
+  font-family: "Baskervville", serif;
+}
+.bokor {
+  font-family: "Bokor", system-ui;
+}
+.Home-bg{
+  background-image: linear-gradient(to top, #0d0d0d, #1e1e1e, #2e2e2e, #3f3f3f, #515151);
+}
+.bigShoulders{
+  font-family: "Big Shoulders Stencil Display", sans-serif;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
