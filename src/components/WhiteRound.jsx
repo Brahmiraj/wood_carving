@@ -14,7 +14,7 @@ export default function WhiteRound() {
         repeat: Infinity,
         delay: 0.5,
       }}
-      className="-z-5 0 relative"
+      className="-z-50 relative"
     >
       <img
         src={Ellipse1}
