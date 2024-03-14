@@ -18,7 +18,7 @@ export default function Header() {
       <div className="flex justify-center items-end gap-10 max-lg:gap-5 text-white text-lg uppercase baskervville 4xl:text-3xl max-sm:hidden cursor-pointer">
         <motion.h1
           initial={{
-            x: -200,
+            x: -100,
             opacity: 0,
           }}
           whileInView={{
@@ -41,7 +41,7 @@ export default function Header() {
         </motion.h1>
         <motion.h1
           initial={{
-            x: -200,
+            x: -100,
             opacity: 0,
           }}
           whileInView={{
@@ -64,7 +64,7 @@ export default function Header() {
         </motion.h1>
         <motion.h1
           initial={{
-            x: -200,
+            x: -100,
             opacity: 0,
           }}
           whileInView={{
@@ -101,7 +101,7 @@ export default function Header() {
         />
         <motion.h1
           initial={{
-            x: 200,
+            x: 100,
             opacity: 0,
           }}
           whileInView={{
@@ -124,7 +124,7 @@ export default function Header() {
         </motion.h1>
         <motion.h1
           initial={{
-            x: 200,
+            x: 100,
             opacity: 0,
           }}
           whileInView={{
@@ -147,7 +147,7 @@ export default function Header() {
         </motion.h1>
         <motion.h1
           initial={{
-            x: 200,
+            x: 100,
             opacity: 0,
           }}
           whileInView={{
