@@ -14,7 +14,7 @@ export default function Final() {
           />
         </div>
         <div className="bg-[#C29545] w-7 max-2xl:w-5 max-sm:w-3 h-[450px] max-2xl:h-[500px] max-sm:h-60 max-lg:h-[400px] absolute transform top-1/2 -translate-y-1/2"></div>
-        <div className="absolute transform top-[53%] -translate-y-1/2 left-40 max-2xl:left-14 max-sm:left-10 flex flex-col gap-5 max-sm:gap-1 text-white z-20">
+        <div className="absolute transform top-[53%] -translate-y-1/2 left-40 max-2xl:left-14 max-sm:left-10 flex flex-col gap-5 max-sm:gap-1 text-white z-50">
           <h1 className="bigShoulders text-6xl 4xl:text-8xl max-2xl:text-5xl max-lg:text-4xl max-sm:text-xl w-[33%] 4xl:w-[45%] max-2xl:w-[40%]">
             Lorem ipsum dolor sit amet consectetur. Ut sed cras posuere
             tristique. Mauris non turpis nisl risus cras lectus adipiscing.

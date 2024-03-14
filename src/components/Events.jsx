@@ -6,6 +6,7 @@ import img3 from "../assets/events/img3.png";
 import img4 from "../assets/events/img4.png";
 import img5 from "../assets/events/img5.png";
 import img6 from "../assets/events/img6.png";
+import { Zoom } from "react-awesome-reveal";
 
 export default function Events() {
   return (
@@ -16,8 +17,26 @@ export default function Events() {
         className="absolute top-[-10%] left-[-40%]"
       />
       <div className="2xl:pl-20 max-2xl:flex max-2xl:flex-col max-2xl:justify-center max-2xl:items-center">
-        <div className="bokor text-8xl text-white max-sm:text-5xl">Upcoming Events</div>
-        <div className="p-[1px] bg-[#B5964D] w-1/2 max-2xl:w-3/4 my-2"></div>
+        <div className="bokor text-8xl text-white max-sm:text-5xl flex">
+          <Zoom cascade damping={0.1} >
+            <span>U</span>
+            <span>p</span>
+            <span>c</span>
+            <span>o</span>
+            <span>m</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+            <span> </span>
+            <span>E</span>
+            <span>v</span>
+            <span>e</span>
+            <span>n</span>
+            <span>t</span>
+            <span>s</span>
+          </Zoom>
+        </div>
+        <Zoom cascade delay={1000}><div className="p-[1px] bg-[#B5964D] w-1/2 max-2xl:w-3/4 my-2"></div></Zoom>
       </div>
       <div>
         <div className="grid grid-cols-6 max-2xl:grid-cols-3 max-sm:grid-cols-2 justify-between items-end">

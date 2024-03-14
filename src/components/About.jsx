@@ -1,6 +1,7 @@
 import React from "react";
 import Aboutbg from "../assets/about/Aboutbg.png";
 import MidImg from "../assets/about/MidImg.png";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
@@ -8,21 +9,80 @@ export default function About() {
       <div className="relative">
         <div className="bg-[#C29545] w-10 max-2xl:w-5 max-sm:w-3 h-[700px] max-2xl:h-[500px] max-sm:h-60 max-lg:h-[400px] absolute transform top-1/2 -translate-y-1/2"></div>
         <div className="uppercase absolute transform top-1/2 -translate-y-1/2 left-20 max-sm:left-10 flex flex-col gap-5 max-sm:gap-1 text-white">
-          <span className="bokor text-7xl 4xl:text-8xl max-2xl:text-5xl max-sm:text-3xl">
+          <motion.span
+            initial={{
+              x: -50,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 2,
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bokor text-7xl 4xl:text-8xl max-2xl:text-5xl max-sm:text-3xl"
+          >
             A
-          </span>
-          <span className="bokor text-7xl 4xl:text-8xl max-2xl:text-5xl max-sm:text-3xl">
+          </motion.span>
+          <motion.span
+            initial={{
+              x: -50,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 2,
+              delay: 0.3,
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bokor text-7xl 4xl:text-8xl max-2xl:text-5xl max-sm:text-3xl"
+          >
             B
-          </span>
-          <span className="bokor text-7xl 4xl:text-8xl max-2xl:text-5xl max-sm:text-3xl">
+          </motion.span>
+          <motion.span
+            initial={{
+              x: -50,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 2,
+              delay: 0.6,
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bokor text-7xl 4xl:text-8xl max-2xl:text-5xl max-sm:text-3xl"
+          >
             O
-          </span>
-          <span className="bokor text-7xl 4xl:text-8xl max-2xl:text-5xl max-sm:text-3xl">
+          </motion.span>
+          <motion.span
+            initial={{
+              x: -50,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 2,
+              delay: 0.9,
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bokor text-7xl 4xl:text-8xl max-2xl:text-5xl max-sm:text-3xl"
+          >
             U
-          </span>
-          <span className="bokor text-7xl 4xl:text-8xl max-2xl:text-5xl max-sm:text-3xl">
+          </motion.span>
+          <motion.span
+            initial={{
+              x: -50,
+              opacity: 0,
+            }}
+            transition={{
+              duration: 2,
+              delay: 1.2,
+            }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bokor text-7xl 4xl:text-8xl max-2xl:text-5xl max-sm:text-3xl"
+          >
             T
-          </span>
+          </motion.span>
         </div>
         <div>
           <div className="bg-[#956E2A] w-80 4xl:w-[480px] max-2xl:w-72 max-lg:w-60 max-sm:w-36 h-[700px] 4xl:h-[1050px] max-2xl:h-[550px] max-lg:h-[450px] max-sm:h-[250px] absolute transform top-1/2 max-lg:top-1/2 -translate-y-1/2 left-1/2 max-sm:left-3/4 -translate-x-1/2">
@@ -55,9 +115,15 @@ export default function About() {
                 sagittis faucibus pulvinar bibendum neque. Ridiculus id ac quam
                 duis varius mattis viverra eget. Ut nullam quam in diam.
               </h1>
-              <button className="uppercase bokor p-3 bg-[#C29545] px-16 4xl:text-4xl">
+              <motion.button            whileHover={{
+              scale: 1.1,
+              y: -5,
+              transition: {
+                duration: 0.1,
+              },
+            }} className="uppercase bokor p-3 bg-[#C29545] px-16 4xl:text-4xl">
                 Read more
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
@@ -85,12 +151,25 @@ export default function About() {
             Ridiculus id ac quam duis varius mattis viverra eget. Ut nullam quam
             in diam.
           </h1>
-          <button className="uppercase bokor p-3 max-sm:p-1 bg-[#C29545] px-16 max-sm:px-10 max-sm:text-lg">
+          <motion.button
+            whileHover={{
+              scale: 1.3,
+              y: -5,
+              transition: {
+                duration: 0.1,
+              },
+            }}
+            className="uppercase bokor p-3 max-sm:p-1 bg-[#C29545] px-16 max-sm:px-10 max-sm:text-lg"
+          >
             Read more
-          </button>
+          </motion.button>
         </div>
         <div className="2xl:hidden">
-          <img src={Aboutbg} alt="Aboutbg" className="w-full relative -z-10 max-sm:h-[500px]" />
+          <img
+            src={Aboutbg}
+            alt="Aboutbg"
+            className="w-full relative -z-10 max-sm:h-[500px]"
+          />
         </div>
       </div>
     </div>
